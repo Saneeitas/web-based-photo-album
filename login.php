@@ -44,6 +44,7 @@
           <!-- /.col -->
         </div>
       </form>
+      
       <!-- /.social-auth-links -->
 
       <!-- <p class="mb-1">
