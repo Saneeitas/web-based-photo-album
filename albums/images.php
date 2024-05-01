@@ -12,6 +12,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
         }
     }
 }
+
 ?>
 <div class="w-100 d-flex justify-content-between border-bottom py-2">
 	<h3><?php echo $name ?></h3>
@@ -48,6 +49,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 		</a>
 	</div>
 	<?php endwhile; ?>
+	
 </div>
 <div class="row">
     <div class="w-100 p-2 text-center" id="nData" style="display:none"><b>No Images</b></div>
