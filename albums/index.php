@@ -77,6 +77,7 @@
 			})
 		})
 	})
+
 	function delete_album($id){
 		start_loader();
 		$.ajax({
@@ -99,4 +100,5 @@
 			}
 		})
 	}
+	
 </script>
