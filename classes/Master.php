@@ -71,6 +71,7 @@ Class Master extends DBConnection {
 		}
 		return json_encode($resp);
 	}
+
 	function retrieve_album(){
 		$sql = "UPDATE `album_list` set delete_f = 0 where id = '{$_POST['id']}' ";
 		$retrieve = $this->conn->query($sql);
@@ -147,6 +148,7 @@ Class Master extends DBConnection {
 		}
 		return json_encode($resp);
 	}
+
 	function rename_image(){
 		extract($_POST);
 		$nname = $original_name.$ext;
@@ -164,6 +166,7 @@ Class Master extends DBConnection {
 		}
 		return json_encode($resp);
 	}
+
 	function delete_image(){
 		$sql = "UPDATE `images` set delete_f = 1 where id = '{$_POST['id']}' ";
 		$delete = $this->conn->query($sql);
@@ -178,6 +181,7 @@ Class Master extends DBConnection {
 		}
 		return json_encode($resp);
 	}
+	
 	function move_image(){
 		extract($_POST);
 		$fname  = strrev(explode("/",strrev($opath),-1)[0]);
