@@ -97,6 +97,7 @@
 			_conf("Are you sure to empty the archives ?","permanently_delete",[])
 		})
 	})
+	
 	function retrieve_album($id){
 		start_loader();
 		$.ajax({
@@ -119,6 +120,7 @@
 			}
 		})
 	}
+
     function retrieve_image($id,$album_id){
 		start_loader();
 		$.ajax({
@@ -141,6 +143,7 @@
 			}
 		})
 	}
+
     function permanently_delete(){
 		start_loader();
 		$.ajax({
