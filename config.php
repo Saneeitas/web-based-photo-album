@@ -14,6 +14,7 @@ function redirect($url=''){
 	if(!empty($url))
 	echo '<script>location.href="'.base_url .$url.'"</script>';
 }
+
 function validate_image($file){
 	if(!empty($file)){
 			return base_url.$file;
@@ -27,6 +28,7 @@ function validate_image($file){
 		return base_url.'uploads/no-image-available.png';
 	}
 }
+
 function isMobileDevice(){
     $aMobileUA = array(
         '/iphone/i' => 'iPhone', 
@@ -47,6 +49,7 @@ function isMobileDevice(){
     //Otherwise return false..  
     return false;
 }
+
 function scan_dir($dir) {
     $ignored = array('.', '..', '.svn', '.htaccess');
 
