@@ -7,9 +7,11 @@ class SystemSettings extends DBConnection{
 	public function __construct(){
 		parent::__construct();
 	}
+
 	function check_connection(){
 		return($this->conn);
 	}
+
 	function load_system_info(){
 		// if(!isset($_SESSION['system_info'])){
 			$sql = "SELECT * FROM system_info";
@@ -19,6 +21,7 @@ class SystemSettings extends DBConnection{
 				}
 		// }
 	}
+	
 	function update_system_info(){
 		$sql = "SELECT * FROM system_info";
 		$qry = $this->conn->query($sql);
