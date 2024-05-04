@@ -74,6 +74,7 @@ while($row=$sched_qry->fetch_assoc()):
 endwhile;
 $sched = json_encode($sched_data);
 ?>
+
 <script>
 	var scheds = $.parseJSON('<?php echo $sched ?>');
 	$(function(){
