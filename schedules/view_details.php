@@ -30,6 +30,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
     <button type="button" id="delete" class="btn btn-danger btn-flat" data-id="<?php echo $_GET['id'] ?>">Delete</button>
     <button type="button" class="btn btn-secondary btn-flat" data-dismiss="modal">Close</button>
 </div>
+
 <script>
     $(function(){
         $('#update').click(function(){
