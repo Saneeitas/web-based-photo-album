@@ -65,4 +65,5 @@ function scan_dir($dir) {
     return ($files) ? $files : false;
 }
 ob_end_flush();
+
 ?>
